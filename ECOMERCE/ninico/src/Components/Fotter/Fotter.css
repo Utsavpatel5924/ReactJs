@@ -1,0 +1,18 @@
+p:hover{
+    color: rgb(248, 72, 72);
+    transform: translateX(2px) ;
+    /* transition: 2px; */
+}
+
+.fa-solid fa-arrow-right:hover{
+    /* color: rgb(248, 72, 72); */
+    transform: initial translateX(2px) ;
+    /* animation: linear ;  */
+}
+#bg-color{
+    background-color: rgba(241, 240, 240, 0.831);
+}
+
+#email::placeholder{
+    font-size: 12px;;
+}

@@ -1,0 +1,99 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.Swiper{
+    height: auto;
+    width: auto;
+}
+
+.slide {
+    min-height: 260px;
+}
+
+.slide-text {
+    top: 0%;
+    left: 0%;
+    z-index: 19;
+    font-family: "Poppins", sans-serif;
+    padding-left: 2.4rem;
+    width: 70%;
+    height: 100%;
+}
+
+.slide-text p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ff2d61;
+    text-align: start;
+    animation: Text_show 0.5s linear 0s 1 forwards;
+}
+
+.slide-text h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 1.2rem 0%;
+    text-align: start;
+}
+
+.slide-text h1 span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 0px 0.8rem;
+    color: #ff2d61;
+    text-align: start;
+}
+
+.slide-text #shopLink {
+    /* width: 200px;
+    width: 15rem; */
+    width: calc(100% - 60%);
+    font-weight: 500;
+    padding: 1.5rem;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    background-color: #fff;
+    animation: Text_show 1s linear 1s 1 forwards;
+}
+
+/* side img */
+
+.side-images .banner {
+    /* overflow: hidden; */
+    border-radius: 8px;
+    width: 88%;
+    /* min-height: 19rem; */
+}
+
+.banner:nth-child(1) {
+    margin: 0rem 0rem 1.6rem 0rem;
+}
+
+.side-images .banner:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+
+.side-images .banner .Img-text {
+    font-family: "Poppins", sans-serif;
+    top: 0%;
+    left: 0%;
+    padding: 1.2rem 1.8rem;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .Img-text h3 {
+    color: #E17F98;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: start;
+}
+
+.banner .Img-text h1 {
+    color: #222;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: start;
+}
