@@ -16,3 +16,26 @@ p:hover{
 #email::placeholder{
     font-size: 12px;;
 }
+.icons{
+    width:20px;
+    height: 20px;
+    margin-top: 4px;
+}
+button.form-button span.icons{
+    animation: 0.4s linear alternate backwards;
+
+}
+
+button.form-button:hover span.icons{
+    animation-name: MoveBtnArrow;
+}
+
+@keyframes MoveBtnArrow {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(6px);
+        opacity: 0;
+    }
+}

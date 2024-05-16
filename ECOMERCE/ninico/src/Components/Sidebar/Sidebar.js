@@ -22,7 +22,7 @@ import banerSide1 from '../Assate/banner-slider-02.jpg'
 
 function Sidebar() {
   return (
-    <div className='flex mt-3 ms-44 Swiper '>
+    <div className='flex  Swiper container '>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

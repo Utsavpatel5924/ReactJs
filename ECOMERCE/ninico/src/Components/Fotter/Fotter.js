@@ -5,6 +5,8 @@ import img2 from '../Assate/amazon.png'
 import img3 from '../Assate/logo-google.png'
 import img5 from '../Assate/Playstore.jpg'
 import img6 from '../Assate/behance-logo.png'
+import RightArrow from "../Assate/arrow-right-solid.svg";
+
 import './Fotter.css'
 
 const Fotter = () => {
@@ -36,23 +38,25 @@ const Fotter = () => {
                 </div>
                 <div className='text-start ' >
                     <h1 className='text-xl underline mb-10'>Social Network</h1>
-                    <p><i class="me-3 fa-brands fa-facebook-f"></i>Facebook</p>
-                    <p><i class="me-2 fa-brands fa-dribbble"></i>Dribbble</p>
-                    <p><i class="me-2 fa-brands fa-twitter"></i>Twitter</p>
-                    <p><i class="me-2 fa-brands fa-behance"></i>Behance</p>
-                    <p><i class="me-2 fa-brands fa-youtube"></i>Youtube</p>
+                    <p><i className="me-3 fa-brands fa-facebook-f"></i>Facebook</p>
+                    <p><i className="me-2 fa-brands fa-dribbble"></i>Dribbble</p>
+                    <p><i className="me-2 fa-brands fa-twitter"></i>Twitter</p>
+                    <p><i className="me-2 fa-brands fa-behance"></i>Behance</p>
+                    <p><i className="me-2 fa-brands fa-youtube"></i>Youtube</p>
                 </div>
                 <div className='text-start '>
                     <h1 className='text-xl underline mb-10 '>Get Newsletter</h1>
                     <span>Get on the list and get 10% off your first <br /> order!</span><br />
                     <input type="email" placeholder='Enter email adderes' className='h-10 w-60' name="" id="email" /><br />
-                    <button className='h-10 w-44 mt-2    bg-rose-500 rounded-lg text-white'>Subscribe Now <i class="fa-solid fa-arrow-right"></i></button>
+                    <button className="bg-[#D51243] form-button flex items-center my-2 justify-evenly text-[#FFFFFF] font-bold text-[1.1rem] min-w-[185px] min-h-[55px] px-2 rounded-[5px]">
+                            Subscribe Now <span className="icons"><img src={RightArrow} alt="Right Arrow" /></span>
+                        </button>
                 </div>
             </div>
             <hr className='mt-10 '/>
             <div className='flex justify-between mt-10 ms-5'>
                 <div className='flex'>
-                    <span className='h-10 w-10 bg-white rounded-full '><i class="fa-solid fa-phone my-3"></i></span>
+                    <span className='h-10 w-10 bg-white rounded-full '><i className="fa-solid fa-phone my-3"></i></span>
                     <div>
                         <p className="font-bold">980. 029. 666. 99</p>
                         <span className='text-sm'> Working 8:00 - 22:00</span>
