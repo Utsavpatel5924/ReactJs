@@ -26,7 +26,7 @@ const data = [
     {
         qty:1,
         name: "Bradley Burgess 2",
-        price: "$20.00",
+        price: 20.00,
         img: i1,
         img2: p1,
         id : 1,
@@ -34,7 +34,7 @@ const data = [
     {
         qty:1,
         name: "Allie Sharp",
-        price: "$30.00",
+        price: 30.00,
         img: i2,
         img2: p2,
         id : 2
@@ -42,7 +42,7 @@ const data = [
     {
         qty:1,
         name: "Nathaniel Baldwin",
-        price: "$40.00",
+        price: 40.00,
         img: i3,
         img2: p3,
         id : 3
@@ -50,7 +50,7 @@ const data = [
     {
         qty:1,
         name: "Effie Rios",
-        price: "$40.00",
+        price: 40.00,
         img: i4,
         img2: p4,
         id : 4
@@ -58,7 +58,7 @@ const data = [
     {
         qty:1,
         name: "Carolyn Goodwin",
-        price: "$50.00",
+        price: 50.00,
         img: i5,
         img2: p5,
         id : 5
@@ -66,7 +66,7 @@ const data = [
     {
         qty:1,
         name: "Evelyn Patton",
-        price: "$60.00",
+        price: 60.00,
         img: i6,
         img2: s1,
         id : 6
@@ -74,7 +74,7 @@ const data = [
     {
         qty:1,
         name: "Sally Ray",
-        price: "$70.00",
+        price: 70.00,
         img: i7,
         img2: s2,
         id : 7
@@ -82,7 +82,7 @@ const data = [
     {
         qty:1,
         name: "Ora Bowman",
-        price: "$80.00",
+        price: 80.00,
         img: i8,
         img2: s3,
         id : 8
@@ -90,7 +90,7 @@ const data = [
     {
         qty:1,
         name: "Effie Rios",
-        price: "$90.00",
+        price: 90.00,
         img: i9,
         img2: s4,
         id : 9
@@ -98,7 +98,7 @@ const data = [
     {
         qty:1,
         name: "Terry Byrd",
-        price: "$100.00",
+        price: 100.00,
         img: i10,
         img2: s5,
         id : 10

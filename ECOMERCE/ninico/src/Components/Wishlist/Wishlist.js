@@ -5,7 +5,7 @@ import Fotter from '../Fotter/Fotter';
 import Nav from '../Nav/Nav';
 import PageHeading from '../PageHeading/PageHeading';
 import { useDispatch, useSelector } from 'react-redux'
-import { REMOVELIST,ADD_TO_QUANTITY } from "../../Redux/Action/Action";
+import { REMOVELIST,ADD } from "../../Redux/Action/Action";
 
 const Wishlist = () => {
   const wishItems= useSelector((state)=>state.Wishlist.Wishlistitem)
@@ -15,6 +15,12 @@ const Wishlist = () => {
   const remove = (id) => {
     dispatch(REMOVELIST(id));
   };
+
+
+  const ADD_cart = (item) => {
+    dispatch(ADD(item))
+    dispatch(REMOVELIST(item.id))
+  }
 
   return (
     <>
@@ -120,7 +126,7 @@ const Wishlist = () => {
                         </td>
                         <td className="whitespace-nowrap ">
                             <div className="flex items-center justify-center">
-                                <button className="addToCart-btn inline-block border h-14 w-[150px] rounded-md bg-[#D51243] text-white font-medium text-base relative">
+                                <button onClick={()=>ADD_cart(WItem)} className="addToCart-btn inline-block border h-14 w-[150px] rounded-md bg-[#D51243] text-white font-medium text-base relative">
                                     Add To Cart
                                 </button>
                             </div>

@@ -23,10 +23,24 @@ export const REMOVE = (id) => {
         payload:id
     }
 }
-// export const Quantity = (id) => {
-// export const QUANTITY = (item) => {
-//     return {
-//         type:"ADD_TO_QUANTITY",
-//         payload:item
-//     }
-// }
+export const CART_QUT_INCREASE = (item) => {
+    return{
+        type:"INCREASE_CART_COUNT",
+        payload:item
+    }
+}
+
+export const CART_QUT_DECREASE  = (item) => {
+    return{
+        type:"DECREASE_CART_COUNT",
+        payload:item
+    }
+}
+
+
+export const Update_Qty=(id,qty)=>{
+    return{
+        type:"Update_Qty",
+        payload:{id,qty}
+    }
+}

@@ -16,42 +16,42 @@ const TopCatagories = () => {
           <div  >
             <div className='bg-gray-200 min-h-36 min-w-36 flex justify-center items-center rounded-full relative'>
               <img src={img1} alt=" "  />
-              <span className= 'absolute bg-white rounded-full top-0 right-0 text-red-400 h-10 w-10 flex justify-center items-center shadow-lg'  >20</span>
+              <span className= 'absolute hover:bg-rose-500 hover:text-white bg-white rounded-full top-0 right-0 text-red-400 h-10 w-10 flex justify-center items-center shadow-lg'  >20</span>
             </div>
             <pre className='mt-10'>Driftwood <br />Table Decor</pre>
           </div>
           <div  >
             <div className='bg-gray-200 min-h-36 min-w-36 flex justify-center items-center rounded-full relative'>
               <img src={img2} alt=" "  />
-              <span className= 'absolute bg-white rounded-full top-0 right-0 text-red-400 h-10 w-10 flex justify-center items-center shadow-lg'  >12</span>
+              <span className= 'absolute hover:bg-rose-500 hover:text-white bg-white rounded-full top-0 right-0 text-red-400 h-10 w-10 flex justify-center items-center shadow-lg'  >12</span>
             </div>
             <pre className='mt-10'>  Floor Driftwood <br />Sculpture</pre>
           </div>
           <div  >
             <div className= 'topCatagoris bg-gray-200 min-h-36 min-w-36 flex justify-center items-center rounded-full relative'>
               <img src={img3} alt=" "  />
-              <span className=  '  absolute bg-white  rounded-full top-0 right-0 text-red-400 h-10 w-10 flex justify-center items-center shadow-lg'  >03</span>
+              <span className=  '  absolute hover:bg-rose-500 hover:text-white bg-white  rounded-full top-0 right-0 text-red-400 h-10 w-10 flex justify-center items-center shadow-lg'  >03</span>
             </div>
             <pre className='mt-10'>  Driftwood <br />Christmas Tree </pre>
           </div>
           <div  >
             <div className='bg-gray-200 min-h-36 min-w-36 flex justify-center items-center rounded-full relative'>
               <img src={img4} alt=" "  />
-              <span className= 'absolute bg-white rounded-full top-0 right-0 text-red-400 h-10 w-10 flex justify-center items-center shadow-lg'  >09</span>
+              <span className= 'absolute hover:bg-rose-500 hover:text-white bg-white rounded-full top-0 right-0 text-red-400 h-10 w-10 flex justify-center items-center shadow-lg'  >09</span>
             </div>
             <pre className='mt-10'>Wooden<br />Bluetooth Speaker</pre>
           </div>
           <div  >
             <div className='bg-gray-200 min-h-36 min-w-36 flex justify-center items-center rounded-full relative'>
               <img src={img5} alt=" "  />
-              <span className= 'absolute bg-white rounded-full top-0 right-0 text-red-400 h-10 w-10 flex justify-center items-center shadow-lg'  >10</span>
+              <span className= 'absolute hover:bg-rose-500 hover:text-white bg-white rounded-full top-0 right-0 text-red-400 h-10 w-10 flex justify-center items-center shadow-lg'  >10</span>
             </div>
             <pre className='mt-10'>Receivers <br />Amplifiers</pre>
           </div>
           <div  >
             <div className='bg-gray-200 min-h-36 min-w-36 flex justify-center items-center rounded-full relative'>
               <img src={img6} alt=" "  />
-              <span className= 'absolute bg-white rounded-full top-0 right-0 text-red-400 h-10 w-10 flex justify-center items-center shadow-lg'  >05</span>
+              <span className= 'absolute hover:bg-rose-500 hover:text-white bg-white rounded-full top-0 right-0 text-red-400 h-10 w-10 flex justify-center items-center shadow-lg'  >05</span>
             </div>
             <pre className='mt-10'>Appetizer<br />Plate Set </pre>
           </div>

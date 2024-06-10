@@ -8,7 +8,7 @@ const Nav = () => {
     <>
       <div className='flex '>
         <div>
-          <Catagories className='dropdown-content'/>
+          <Catagories />
         </div>
         <div className='z-10'>
           <div className='btn-red  pl-2 mt-5 flex items-center justify-between '>
@@ -40,8 +40,8 @@ const Nav = () => {
                     <li><a href="" className='hover:text-rose-600'>Shope Details</a></li>
                     <li><a href="" className='hover:text-rose-600'>Shope Details 2</a></li>
                     <li><a href="" className='hover:text-rose-600'>Shope Location</a></li>
-                    <li><a href="" className='hover:text-rose-600'>Cart</a></li>
-                    <li><a href="" className='hover:text-rose-600'>Sing in</a></li>
+                    <li><Link to="/cart" className='hover:text-rose-600'>Cart</Link></li>
+                    <li><Link to="/register" className='hover:text-rose-600'>Sign In</Link></li>
                     <li><a href="" className='hover:text-rose-600'>Checkout</a></li>
                     <li><a href="" className='hover:text-rose-600'>Wishlist</a></li>
                   </ul>

@@ -2,24 +2,94 @@ import React from "react";
 import data from "./Product_data";
 import { Link } from 'react-router-dom'
 import "./PopulerProduct.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-import{useDispatch} from "react-redux"
-import {ADD,WISHLIST} from '../../Redux/Action/Action'
+
+import { useDispatch,useSelector } from "react-redux"
+import { ADD, WISHLIST } from '../../Redux/Action/Action'
+
+function Tostsuccsess() {
+  toast.success('This item is succsessfull Add to cart', {
+    position: "bottom-right",
+    autoClose: 1000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+  });
+}
+function Tosterror() {
+  toast.error('This item is allrady Add to cart', {
+    position: "bottom-right",
+    autoClose: 1000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+  });
+}
 
 
-const Popular_p = ( ) => {
-  const Product={data}
-  const dispatch=useDispatch();
+function TostsuccsessW() {
+  toast.success('This item is succsessfull Add to Wishlist', {
+    position: "bottom-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+  });
+}
+function TosterrorW() {
+  toast.error('This item is allrady Add to Wishlist', {
+    position: "bottom-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+  });
+}
 
-  const send= (e)=> {
-    console.log(e,'eeeee');
+const Popular_p = () => {
+
+  const Data  = useSelector( (state) => state.Creatreduser.carts)
+  const data2 = useSelector((state) => state.Wishlist.Wishlistitem)
+  const Product = { data }
+  const dispatch = useDispatch();
+
+  const send = (e) => {
+    console.log(e, 'eeeee');
+    // Tostsuccsess();
     dispatch(ADD(e))
+    let find = Data.findIndex((item)=>item.id  === e.id)
+    if(find === -1){
+      Tostsuccsess();
+    }else{
+      Tosterror()
+    }
   }
-  const sendWishlistlength= (e)=> {
-    console.log(e,'eeeee');
+  const sendWishlistlength = (e) => {
+    console.log(e, 'eeeee');
     dispatch(WISHLIST(e))
+    let find = data2.findIndex((item)=>item.id  === e.id)
+    if(find === -1){
+      TostsuccsessW();
+    }else{
+      TosterrorW()
+    }
   }
-  
+
+
 
   return (
     <div className="my-10 mx-1">
@@ -60,10 +130,10 @@ const Popular_p = ( ) => {
                   <div className="mt-4 opacity-0 dots">
                     <div className="tpproduct__thumb-bg">
                       <div className="tpproductactionbg">
-                        <a href='#' className="add-to-cart" onClick={()=>send(value)} ><i className="fa-solid fa-basket-shopping" style={{ color: "#c2c2c2" }}></i></a>
+                        <a href='#' className="add-to-cart" onClick={() => send(value)} ><i className="fa-solid fa-basket-shopping" style={{ color: "#c2c2c2" }}></i></a>
                         <a href="#"><i className="fa-solid fa-arrow-right-arrow-left" style={{ color: "#c2c2c2" }}></i></a>
-                        <a href="#"><i className="fa-regular fa-eye" style={{ color: "#c2c2c2" }}></i></a>
-                        <a href='#' className="wishlist"><i className="fa-regular fa-heart" onClick={()=>sendWishlistlength(value)} style={{ color: "#c2c2c2" }}></i></a>
+                        <Link to={`/product/${value.id}`} ><i className="fa-regular fa-eye" style={{ color: "#c2c2c2" }}></i></Link>
+                        <a href='#' className="wishlist"><i className="fa-regular fa-heart" onClick={() => sendWishlistlength(value)} style={{ color: "#c2c2c2" }}></i></a>
                       </div>
                     </div>
                     <div className="flex justify-between ">
@@ -92,6 +162,7 @@ const Popular_p = ( ) => {
           );
         })}
       </div>
+      <ToastContainer position="bottom-right" theme="colored" autoClose='1000'/>
     </div>
   );
 };

@@ -10,7 +10,7 @@ const Catagories = () => {
   };
   return (
     <>
-      <div className='container ps-7 mt-5'>
+      <div className='container z-10 ps-7 mt-5'>
         <div className="main-c " tabIndex="0" onClick={toggleMenu}>
           <div className="flex ps-5 pt-3 cursor-pointer ">
             <i className="fa-solid fa-bars pe-3 pt-1" style={{ color: "#ffffff" }}></i>

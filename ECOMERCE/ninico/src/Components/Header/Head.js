@@ -19,7 +19,7 @@ const Head = () => {
       <header>
 
         <div className='flex justify-around flex-wrap'>
-          <img src={img} alt="" />
+        <Link to="/" className='hover:text-rose-600'> <img src={img} alt="" /></Link>
           <div className=' bg-slate-200 rounded-lg '>
             <i className="fa-solid fa-magnifying-glass ms-3 me-3"></i>
             <input type="search" placeholder='Search Product' className='bg-slate-200 border-2 ms-2  h-10 min-w-[600px]' name="Search" id="" />

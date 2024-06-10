@@ -98,7 +98,7 @@ const Register = () => {
         <div className="flex xl:flex-nowrap justify-center xl:justify-between mb-10 flex-wrap mx-10 mt-20"></div>
         {/* ********************************** */}
         <form onSubmit={onSubmitFun} >
-          <div className="h-[750px] bg-[#F6F6F6] rounded md:mt-10 lg:mt-0 ">
+          <div className="h-[550px] bg-[#F6F6F6] rounded md:mt-10 lg:mt-0">
             <div className=' rounded-t-lg relative' >
               <img src={Sign} className='rounded-t-lg' alt="" />
             </div>

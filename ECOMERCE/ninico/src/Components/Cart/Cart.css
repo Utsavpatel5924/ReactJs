@@ -1,19 +1,6 @@
-
-
-/* .addToCart-btn::after{
-    content: "";
-    display: block;
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    border-radius: 6px;
-    background: #f9f9f96d;
-
-    animation: 0.5s ease-out 1 alternate ;
-} */
+.quantity:hover .quantity-btn{
+    opacity: 1;
+}
 
 .addToCart-btn:hover::after{
     animation-name: BtnCase;

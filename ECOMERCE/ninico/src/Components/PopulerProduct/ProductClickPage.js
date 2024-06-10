@@ -5,7 +5,7 @@ import Nav from '../Nav/Nav'
 import PageHeading from '../PageHeading/PageHeading';
 import Fotter from '../Fotter/Fotter'
 import data from './Product_data'
-import { CiHeart } from "react-icons/ci";
+import { CiHeart,CiStar } from "react-icons/ci";
 
 
 
@@ -23,8 +23,7 @@ export default function ProductClickPage(props) {
         <div className='' >
           <img src={product.img} className='h-[20rem] w-[20rem] ' alt="product_image" />
         </div>
-        <div className='mt-10' >
-          {props.name}
+        <div className='mt-10 text-start' >
           <h1 className='font-bold ms-[5rem] text-[2rem] ' >{product.name}</h1>
           {/* <del className='text-gray-500 font-bold text-[1.5rem] ms-[5rem]'>$9.28</del> */}
           <div className=' font-bold text-[1.5rem] ms-[5rem] text-[#d51243] '>{product.price}</div>
@@ -35,7 +34,7 @@ export default function ProductClickPage(props) {
                 <input type="number" defaultValue={1} className='outline-none border-none focus:border-none mx-2' />
               </div>
               <div className=' items-center text-center' >
-                <button type='submit' className='p-0 mt-6 ms-4 px-10 bg-[#D51243] h-[3.1rem] items-center w-[10rem] text-white rounded ' >Add to cart</button>
+                <button type='submit' className='p-0 mt-6 ms-4 px-10 bg-[#D51243] h-[3.1rem] items-center w-[10rem] text-white rounded hover:bg-black ' >Add to cart</button>
               </div>
               <div className='mt-6 p-5 py-0 ms-5 flex items-center border hover:bg-[#d51243] hover:text-white rounded hover:transition-all hover:0.3s hover:ease-in cursor-pointer '>
                 <CiHeart className='h-6 w-6 ' />
